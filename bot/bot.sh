@@ -1,12 +1,5 @@
-#!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » RyyStore࿐
-# telegrup  » https://t.me/ryyvpntesti
-# telegram   » https://t.me/RyyVpn26
-# whatsapp   » wa.me/+6287767287284
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# RyyStore࿐
+# !/bin/bash
+# build by Mr Dudul
 
 NS=$( cat /etc/xray/dns )
 PUB=$( cat /etc/slowdns/server.pub )
@@ -18,13 +11,13 @@ NC='\e[0m'
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/RyyStore/x2621/main/bot/bot.zip
+wget https://raw.githubusercontent.com/Dudul19/autosc/main/bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
 rm -rf bot.zip
 clear
-wget https://raw.githubusercontent.com/RyyStore/x2621/main/bot/kyt.zip
+wget https://raw.githubusercontent.com/Dudul19/autosc/main/bot/kyt.zip
 unzip kyt.zip
 pip3 install -r kyt/requirements.txt
 

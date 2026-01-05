@@ -1,12 +1,5 @@
-#!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » RyyStore࿐
-# telegrup  » https://t.me/ryyvpntesti
-# telegram   » https://t.me/RyyVpn26
-# whatsapp   » wa.me/+6287767287284
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# RyyStore࿐
+# !/bin/bash
+# build by Mr Dudul
 
 Green="\e[92;1m"
 RED="\033[31m"
@@ -23,6 +16,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 
 clear
+
 # // Exporint IP AddressInformation
 export IP=$( curl -sS icanhazip.com )
 
@@ -33,14 +27,14 @@ clear;clear;clear
 
 # // Banner
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "  Developer » RyyStore࿐${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Developer » Mr Dudul ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "  » This Will Quick Setup VPN Server On Your Server"
-echo -e "  Sing Ngawe : ${green}RyyStore࿐ ${NC}"
-echo -e "  Recode Karo RyyStore࿐ ${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
+echo -e "  Thanks to Mr Dudul ${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 sleep 2
-###### IZIN SC 
+
+# IZIN SC 
 
 # // Checking Os Architecture
 if [[ $( uname -m | awk '{print $1}' ) == "x86_64" ]]; then
@@ -83,7 +77,8 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-#IZIN SCRIPT
+
+# IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
@@ -91,8 +86,9 @@ apt install ruby -y
 gem install lolcat
 apt install wondershaper -y
 clear
+
 # REPO    
-    REPO="https://raw.githubusercontent.com/RyyStore/x2621/main/"
+    REPO="https://raw.githubusercontent.com/Dudul19/autosc/main/"
 
 ####
 start=$(date +%s)
@@ -262,7 +258,7 @@ echo $host1 > /etc/xray/domain
 echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
-#install cf
+# install cf
 wget ${REPO}files/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
@@ -273,28 +269,33 @@ clear
 }
 
 clear
-#GANTI PASSWORD DEFAULT
+# GANTI PASSWORD DEFAULT
 restart_system(){
-#IZIN SCRIPT
+
+# IZIN SCRIPT
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m" 
 clear
-izinsc="https://raw.githubusercontent.com/RyyStore/x2621/main/register"
+izinsc="https://raw.githubusercontent.com/Dudul19/autosc/main/register"
+
 # USERNAME
 rm -f /usr/bin/user
 username=$(curl $izinsc | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
 expx=$(curl $izinsc | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
+
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
 exp=$(cat /usr/bin/e)
 clear
+
 # CERTIFICATE STATUS
 d1=$(date -d "$valid" +%s)
 d2=$(date -d "$today" +%s)
 certifacate=$(((d1 - d2) / 86400))
+
 # VPS Information
 DATE=$(date +'%Y-%m-%d')
 datediff() {
@@ -305,6 +306,7 @@ datediff() {
 mai="datediff "$Exp" "$DATE""
 
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+
 # Status Expired Active
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
@@ -316,8 +318,8 @@ else
 sts="${Error}"
 fi
 TIMES="10"
-CHATID="6583386476"
-KEY="6855227665:AAGHRdC4RXnwuPWKODO_49yEl8YQmQ7BzSg"
+CHATID="1476710905"
+KEY="8566031597:AAGoMqtu4tUe4587Cu1GAyarR-muVkS-v5w"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
@@ -332,7 +334,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 <code>Time     :</code><code>$TIMEZONE</code>
 <code>Exp Sc.  :</code><code>$exp</code>
 <code>━━━━━━━━━━━━━━━━━━━━━━━━━</code>
-<b>RyyStore Script Notifikasi</b>
+<b>Dudul Script Notifikasi</b>
 <code>━━━━━━━━━━━━━━━━━━━━━━━━━</code>
 <i>Automatic Notifications From Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/ryyvpn26"}]]}' 
@@ -340,6 +342,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
 clear
+
 # Pasang SSL
 function pasang_ssl() {
 clear
@@ -406,7 +409,8 @@ rm -rf /etc/vmess/.vmess.db
     echo "& plughin Account" >>/etc/ssh/.ssh.db
     echo "echo -e 'Vps Config User Account'" >> /etc/user-create/user.log
     }
-#Instal Xray
+
+# Instal Xray
 function install_xray() {
 clear
     print_install "Core Xray 1.8.1 Latest Version"
@@ -420,7 +424,8 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     # // Ambil Config Server
     wget -O /etc/xray/config.json "${REPO}config/config.json" >/dev/null 2>&1
     wget -O /etc/systemd/system/runn.service "${REPO}files/runn.service" >/dev/null 2>&1
-    #chmod +x /usr/local/bin/xray
+    
+    # chmod +x /usr/local/bin/xray
     domain=$(cat /etc/xray/domain)
     IPVS=$(cat /etc/xray/ipvps)
     print_success "Core Xray 1.8.1 Latest Version"
@@ -530,7 +535,7 @@ systemctl start rc-local.service
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
 
-#update
+# update
 # set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
@@ -542,7 +547,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service Limit IP & Quota"
-wget -q https://raw.githubusercontent.com/RyyStore/installer/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
+wget -q https://raw.githubusercontent.com/Dudul19/autosc/main/config/fv-tunnel && chmod +x fv-tunnel && ./fv-tunnel
 
 # // Installing UDP Mini
 mkdir -p /usr/local/kyt/
@@ -568,6 +573,7 @@ print_success "Limit IP Service"
 
 function ssh_slow(){
 clear
+
 # // Installing UDP Mini
 print_install "Memasang modul SlowDNS Server"
     wget -q -O /tmp/nameserver "${REPO}files/nameserver" >/dev/null 2>&1
@@ -592,6 +598,7 @@ clear
 function ins_dropbear(){
 clear
 print_install "Menginstall Dropbear"
+
 # // Installing Dropbear
 apt-get install dropbear -y > /dev/null 2>&1
 wget -q -O /etc/default/dropbear "${REPO}config/dropbear.conf"
@@ -605,6 +612,7 @@ clear
 function ins_vnstat(){
 clear
 print_install "Menginstall Vnstat"
+
 # setting vnstat
 apt -y install vnstat > /dev/null 2>&1
 /etc/init.d/vnstat restart
@@ -628,7 +636,8 @@ print_success "Vnstat"
 function ins_openvpn(){
 clear
 print_install "Menginstall OpenVPN"
-#OpenVPN
+
+# OpenVPN
 wget ${REPO}files/openvpn &&  chmod +x openvpn && ./openvpn
 /etc/init.d/openvpn restart
 print_success "OpenVPN"
@@ -637,11 +646,13 @@ print_success "OpenVPN"
 function ins_backup(){
 clear
 print_install "Memasang Backup Server"
-#BackupOption
+
+# BackupOption
 apt install rclone -y
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${REPO}config/rclone.conf"
-#Install Wondershaper
+
+# Install Wondershaper
 cd /bin
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper

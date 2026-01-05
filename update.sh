@@ -1,12 +1,5 @@
-#!/bin/bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » RyyStore࿐
-# tele grup  » https://t.me/ryyvpntesti
-# telegram   » https://t.me/RyyVpn26
-# whatsapp   » wa.me/+6287767287284
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# RyyStore࿐
+# !/bin/bash
+# build by Mr Dudul
 
 clear
 fun_bar() {

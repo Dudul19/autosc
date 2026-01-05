@@ -1,11 +1,5 @@
-#!/bin/bash# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# System Request : Debian 9+/Ubuntu 18.04+/20+
-# Develovers » RyyStore࿐
-# telegrup  » https://t.me/ryyvpntesti
-# telegram   » https://t.me/RyyVpn26
-# whatsapp   » wa.me/+6287767287284
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# RyyStore࿐
+# !/bin/bash
+# build by Mr Dudul
 
 #random
 apt install jq curl -y
@@ -17,10 +11,10 @@ echo ""
 echo ""
 #sub=$(</dev/urandom tr -dc a-z0-9 | head -c3)
 read -rp "Input Domain Name. Example ( kontol12 ): " -e sub
-DOMAIN=serverpremium.biz.id
-SUB_DOMAIN=${sub}.serverpremium.biz.id
-CF_ID=vscobangst111@gmail.com
-CF_KEY=4a912a2d56a1b3837d48751da5334b74a4fb8
+DOMAIN=zuck3r.store
+SUB_DOMAIN=${sub}.zuck3r.store
+CF_ID=akmalcoeg19@gmail.com
+CF_KEY=2643e6e6ee9afb73bdc4f4d8742da31938c1c
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."
