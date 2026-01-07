@@ -29,13 +29,13 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/ryankputra/x2126/main/menu/menu.zip
+    wget https://raw.githubusercontent.com/dudul19/autosc/main/menu/menu.zip
     unzip menu.zip
     chmod +x menu/*
-    mv menu/* /usr/local/sbin
+    mv menu/* /usr/local/sbin/
     rm -rf menu
-    rm -rf menu.zip
-    rm -rf update.sh
+    rm -f menu.zip
+    rm -f update.sh
 }
 netfilter-persistent
 clear

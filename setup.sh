@@ -337,7 +337,7 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
 <b>Dudul Script Notifikasi</b>
 <code>━━━━━━━━━━━━━━━━━━━━━━━━━</code>
 <i>Automatic Notifications From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"t.me/ryyvpn26"}]]}' 
+"'&reply_markup={"inline_keyboard":[[{"text":"ORDER","url":"t.me/dudulrealnofek"}]]}' 
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
@@ -413,13 +413,13 @@ rm -rf /etc/vmess/.vmess.db
 # Instal Xray
 function install_xray() {
 clear
-    print_install "Core Xray 1.8.1 Latest Version"
+    print_install "Core Xray 24.11.11 Latest Version"
     domainSock_dir="/run/xray";! [ -d $domainSock_dir ] && mkdir  $domainSock_dir
     chown www-data.www-data $domainSock_dir
     
     # / / Ambil Xray Core Version Terbaru
 latest_version="$(curl -s https://api.github.com/repos/XTLS/Xray-core/releases | grep tag_name | sed -E 's/.*"v(.*)".*/\1/' | head -n 1)"
-bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version $latest_version
+bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version v24.11.11
  
     # // Ambil Config Server
     wget -O /etc/xray/config.json "${REPO}config/config.json" >/dev/null 2>&1
@@ -428,7 +428,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     # chmod +x /usr/local/bin/xray
     domain=$(cat /etc/xray/domain)
     IPVS=$(cat /etc/xray/ipvps)
-    print_success "Core Xray 1.8.1 Latest Version"
+    print_success "Core Xray 24.11.11 Latest Version"
     
     # Settings UP Nginix Server
     clear
@@ -964,6 +964,7 @@ rm -rf /root/domain
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
+echo -e "${green} Thankyou For Using This Script"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For reboot") "
 reboot
